@@ -6,10 +6,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-source-contentful',
-      option:{
+      resolve: `gatsby-source-contentful`,
+      options: {
         spaceId: "19f6bl7wh8st",
-        accessToken: "6mz3mHAlLPFcA0l7HLbj8OINoL60zGQNA7i6ZAAfO_U",
+        accessToken: "6mz3mHAlLPFcA0l7HLbj8OINoL60zGQNA7i6ZAAfO_U"
       }
     },
     
