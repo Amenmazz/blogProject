@@ -48,7 +48,7 @@ const BlogPost = (props) => {
                 {
                     documentToReactComponents(props.data.contentfulBlog.body.json,options)
                 }
-                <Link to="/blog">Back to Blog</Link>
+                <Link id="foot" to="/blog">Back to Blog</Link>
 
             </div>
         </Layout>
