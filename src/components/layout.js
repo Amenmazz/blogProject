@@ -48,13 +48,14 @@ const Layout = ({ children }) => {
           maxWidth: 960,
           width: `95%`,
           height: `60px`,
-          
+          backgroundColor:`#333`,
           padding:`20px 20px`,
           }}>
-
+            <div style={{color:"white"}}>
             © {new Date().getFullYear()}, By
+            
           {` `}
-            <a id="foot" href="/">My Wonders</a>
+            <a id="foot" href="/">My Wonders</a></div>
           </div>
         </footer>
       </div>
