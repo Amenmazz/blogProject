@@ -5,10 +5,11 @@
     
   }
   #foot {
-    color:rgb(63, 63, 63);
+    color:rgb(31, 31, 31);
     font-family: helvetica;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
   }
   
   #foot:hover {
@@ -16,9 +17,9 @@
   }
   
   #foot:active {
-    color: black;
+    color: rgb(78, 78, 78);
   }
   
   #foot:visited {
-    color: rgb(150, 150, 150);
+    color: rgb(118, 49, 175);
   }
