@@ -1,6 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import "./styles.css"
+
 import Layout from "../components/layout"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { INLINES, BLOCKS } from "@contentful/rich-text-types"
@@ -39,7 +41,8 @@ const BlogPost = (props) => {
     return (
         <Layout>
             <div>
-                <h2>{props.data.contentfulBlog.title}</h2>
+                <h1 style={{textAlign:"center"}}>{props.data.contentfulBlog.title}</h1>
+                <br/>
                 <p style={{fontWeight: 200, fontSize: "0.8rem"}}>Published {props.data.contentfulBlog.publishedDate}</p>
                 <p style={{fontWeight: 300, fontSize: "0.9rem"}}>Written By {props.data.contentfulBlog.author}</p>
                 {

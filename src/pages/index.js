@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,7 +17,7 @@ const IndexPage = () => (
     <hr/>
     <br/>
     <h3>Why this blog?</h3>
-    <p>I love doing traveling and trying new foods, which made me create this blog. In this blog, I am going to share some of things that I have done and tell you about it.</p>
+    <p>I love traveling and trying new food, which made me create this blog. In this blog, I am going to share some of the things that I have done, and tell you about them.</p>
     </div>
 
   </Layout>
