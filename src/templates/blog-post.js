@@ -48,8 +48,9 @@ const BlogPost = (props) => {
                 {
                     documentToReactComponents(props.data.contentfulBlog.body.json,options)
                 }
+                <div style={{textAlign:"center"}}>
                 <Link id="foot" to="/blog">Back to Blog</Link>
-
+                </div>
             </div>
         </Layout>
     )
