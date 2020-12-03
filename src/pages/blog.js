@@ -51,7 +51,7 @@ const Blog = () => {
                                 })
                             }
                         </div>
-                        <button class="buttonEnterClasses vertical-center" style={{textAlign:"center"}} onClick={() => logout()}>Sign Out</button>
+                        <button class="button3 vertical-center"  onClick={() => logout()}>Sign Out</button>
                     </div>
                 )
             }

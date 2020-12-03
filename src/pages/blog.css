@@ -17,46 +17,52 @@
     color: rgb(150, 150, 150);
   }
 
-  .buttonEnterClasses{
-    text-align: center;
-    background-color: #525252 !important;
-    color: #fff !important;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    margin: 0;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      border: none;
-      border-radius: 5px;
-      overflow: visible;
-      font: inherit;
-      font-size: inherit;
-      line-height: inherit;
-      color: inherit;
-      text-transform: none;
+  button,
+      button::after {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      button {
+        background: none;
+        border: 4px solid rgb(46, 46, 46);
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        display: block;
+        font-size: 1.6em;
+        font-weight: bold;
+        margin: 10px auto;
+        padding: 2em 6em;
+        position: relative;
+        text-transform: uppercase;
+      }
+      button::before,
+      button::after {
+        background: rgb(95, 95, 95);
+        content: '';
+        position: absolute;
+        z-index: -1;
+      }
+      button:hover {
+        color: #8d8d8d;
+      }
+      .button1::after {
+        height: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      .button3::after {
+        height: 0;
+        left: 50%;
+        top: 50%;
+        width: 0;
+      }
+      .button3:hover:after {
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
       
-      box-sizing: border-box;
-      padding: 0 30px;
-      vertical-align: middle;
-      font-size: .875rem;
-      line-height: 38px;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: .1s ease-in-out;
-      transition-property: all;
-      transition-property: color,background-color,border-color; 
-      touch-action: manipulation;
-  }
-  
-  .buttonEnterClasses a:hover {
-    opacity:1;
-  }
-  .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 48%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
