@@ -41,6 +41,7 @@ const BlogPost = (props) => {
     return (
         <Layout>
             <div>
+                <div style={{textAlign:"center"}}>
                 <h1 style={{textAlign:"center"}}>{props.data.contentfulBlog.title}</h1>
                 <br/>
                 <p style={{fontWeight: 200, fontSize: "0.8rem"}}>Published {props.data.contentfulBlog.publishedDate}</p>
@@ -48,7 +49,7 @@ const BlogPost = (props) => {
                 {
                     documentToReactComponents(props.data.contentfulBlog.body.json,options)
                 }
-                <div style={{textAlign:"center"}}>
+                
                 <Link id="foot" to="/blog">Back to Blog</Link>
                 </div>
             </div>
