@@ -26,21 +26,36 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} siteDescription={data.site.siteMetadata.description} about="About" contact="Contact" blog="Blog" />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} siteDescription={data.site.siteMetadata.description} home="Home"  blog="Blog" />
       <div
         style={{
-          margin: `0 auto`,
+          margin: `auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
         <footer style={{
-          marginTop: `2rem`
+          marginTop: `3rem`,
+          
+
         }}>
-          © {new Date().getFullYear()}, Built with
+          <div style={{
+          marginTop: `3rem`,
+          textAlign: `center`,
+          position: `fixed`,
+          bottom: `0`,
+          maxWidth: 960,
+          width: `95%`,
+          height: `60px`,
+          
+          padding:`20px 20px`,
+          }}>
+
+            © {new Date().getFullYear()}, By
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+            <a id="foot" href="/">My Wonders</a>
+          </div>
         </footer>
       </div>
     </>

@@ -595,3 +595,28 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+a {
+  
+  font-family: helvetica;
+  
+  
+}
+#foot {
+  color:rgb(63, 63, 63);
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#foot:hover {
+  text-decoration: underline;
+}
+
+#foot:active {
+  color: black;
+}
+
+#foot:visited {
+  color: rgb(150, 150, 150);
+}
